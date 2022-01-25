@@ -3,3 +3,4 @@ export {default as Button} from "components/Button";
 export {default as Container} from "components/Container";
 export {default as Question} from "components/Question";
 export {default as Spinner} from "components/Spinner";
+export {default as Result} from "components/Result";
