@@ -11,10 +11,10 @@ margin-bottom: 96px;
 text-align: center;
 `
 
-const Loading = ({convertedScore}) =>{
+const Loading = ({val}) =>{
     const [title,setTitle] = useState("분석중");
     let history = useNavigate();
-
+    console.log(val);
     useEffect(()=>{
         const id = setTimeout(()=>{
             setTitle((title)=>title+".");
@@ -23,9 +23,9 @@ const Loading = ({convertedScore}) =>{
     },[title]);
     useEffect(()=>{
         setTimeout(()=>{
-            history(`/result`);
+            history(`/result/${val}`);
         },2200);
-    },[history]);
+    },[history,val]);
     return(
         <Container>
             <Title>{title}</Title>

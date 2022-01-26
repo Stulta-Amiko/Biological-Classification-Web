@@ -14,7 +14,7 @@ const Answer = ({currentNo,handleclick})=>(
     <AnswerGroupWrapper>
         {
         BiologySelection[currentNo].answers.map((answer) =>(
-            <Button onClick = {()=> handleclick(answer.isCorrect)}>
+            <Button onClick = {()=> handleclick(answer.value)}>
                     {answer.text}
             </Button>
         ))}

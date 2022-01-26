@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import testImg from "Assets/Image/testing.jpg";
+import RESULT from "./result";
 
 const ResultTitle = styled.h1`
     font-size: 24px;
-    margin-bottom: 56px;
+    margin-bottom: 36px;
     text-align: center;
 `
 
@@ -23,12 +23,18 @@ const StyledImage = styled.img`
 	max-width: 100%;
 	display: block;
 `;
+const Content = styled.div`
+    font-size: 16px;
+    margin-bottom: 56px;
+    text-align: center;
+`
 
-const Result = ({cCode}) =>(
+const Result = ({val}) =>(
     <>
-    <SectionTitle>결과페이지 테스트</SectionTitle>
-    <StyledImage src={testImg}/>
-    <ResultTitle>결과값 테스트</ResultTitle>
+    <SectionTitle>당신이 찾는것이?</SectionTitle>
+    <StyledImage src={RESULT[val].src}/>
+    <ResultTitle>{RESULT[val].title}</ResultTitle>
+	<Content>{RESULT[val].explanation}</Content>
     </>
 );
 

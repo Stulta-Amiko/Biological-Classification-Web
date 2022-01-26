@@ -21,7 +21,6 @@ const QuestionTitle = styled.div`
 const Question = ({currentNo}) =>(
     <QuestionWrapper>
         <PageLabel>
-            <span>{BiologySelection[currentNo].id}</span>/{BiologySelection.length}
         </PageLabel>
         <QuestionTitle>{BiologySelection[currentNo].question}</QuestionTitle>
     </QuestionWrapper>
