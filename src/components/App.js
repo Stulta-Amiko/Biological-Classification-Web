@@ -4,7 +4,7 @@ import theme from "theme";
 import GlobalStyle from 'globalStyle';
 import { BiologySelection } from 'constants';
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
-import {Loading,Quiz,Result} from 'pages';
+import {Loading,Quiz,Result,Home} from 'pages';
 
 function App() {
     const [score,setScore] = useState(0);
@@ -14,6 +14,7 @@ function App() {
             <GlobalStyle/>
             <Router>
                 <Routes>
+                    <Route path="/" element={<Home/>}/>
                     <Route path="/quiz" element={<Quiz setScore={setScore}/>}/>
                     <Route path="/loading" element={<Loading convertedScore={convertedScore}/>}/>
                     <Route path="/result" element={<Result setScore={setScore}/>}/>

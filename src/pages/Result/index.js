@@ -11,7 +11,7 @@ const ResultPage = ({setScore}) =>{
         <Container>
             <Result></Result>
             <Cent>
-                <Button onClick={()=>setScore(0)} style={{textDecoration:'none'}}>다시하기 버튼 임시</Button>
+                <Button onClick={()=>setScore(0)} style={{textDecoration:'none'}} to="/">다시하기 버튼 임시</Button>
             </Cent>
         </Container>
     );
