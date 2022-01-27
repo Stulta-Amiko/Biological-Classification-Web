@@ -4,11 +4,17 @@ import theme from "theme";
 import GlobalStyle from 'globalStyle';
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
 import {Loading,Quiz,Result,Home} from 'pages';
+import {Helmet} from 'react-helmet';
+import favicon from 'Assets/Image/favicon.ico';
 
 function App() {
     const [val,setVal] = useState("");
     return(
         <ThemeProvider theme={theme}>
+            <Helmet>
+                <title>민물조개 테스트</title>
+                <link rel="icon" href={favicon} />
+            </Helmet>
             <GlobalStyle/>
             <Router>
                 <Routes>

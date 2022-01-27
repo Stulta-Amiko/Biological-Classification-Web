@@ -1,25 +1,28 @@
 import Unioninae from "Assets/Image/testing.jpg";
-import Coreana from "Assets/Image/testing.jpg";
-import Leai from "Assets/Image/testing.jpg";
-import Hyriopsinae from "Assets/Image/testing.jpg";
-import Arcaeformis from "Assets/Image/testing.jpg";
-import Arcaeformis_flavotincta from "Assets/Image/testing.jpg";
-import Woodina from "Assets/Image/testing.jpg";
-import Unde from "Assets/Image/testing.jpg";
+import Coreana from "Assets/Image/clam.jpg";
+import Leai from "Assets/Image/clam.jpg";
+import Hyriopsinae from "Assets/Image/clam.jpg";
+import Arcaeformis from "Assets/Image/clam.jpg";
+import Arcaeformis_flavotincta from "Assets/Image/clam.jpg";
+import Woodina from "Assets/Image/clam.jpg";
+import Unde from "Assets/Image/Unde.jpg";
 
 const RESULT = {
     Unioninae: {
         title: "석패아과 조개",
         src: Unioninae,
         explanation:"석패과의 패류는 모두 담수이며 호수나 강 하천바닥의 진흙이나 모래 또는 자갈층에서 발견되며 석패아과의 패각은 좌우대칭이고 크기는 중형에서 대형이다. 형태는 좌우로 긴 타원형 또는 버들잎 모양이고 껍데기는 두껍고 단단하다.",
+        source: "출처: 한국의 비해산 패류",
     },Coreana: {
         title: "두드럭 조개",
         src: Coreana,
-        explanation:"",
+        explanation:"두드럭조개는 국내 담수산 이매패류 중 중대형종에 속한다. 패각은 둥글며 두껍고 단단하다. 패각표면에는 혹 모양의 돌기들이 각정에서 패각 뒤쪽 가장자리로 뻗어있다. 각피는 녹갈색으로 일정하며, 패각 안쪽 면은 무딘 진주광택을 띤다. 유생단계에서는 숙주 어류의 아가미, 지느러미에 붙어 기생하며, 성체가 되면 유속이 빠른 모래와 자갈이 혼합된 하상에 서식한다. 과거 한강, 대동강, 금강에서 발견되었으나, 현재는 금강의 2~3곳에서 서식하는 것으로 알려져 있다. 국내에는 충남, 충북, 전북 등지에서 발견되며, 국외에는 서식하지 않는 우리나라 고유종이다. 갈수기에 서식처 유량 감소와 적정 숙주어류의 감소로 멸종위기에 처해있다.",
+        source: "출처: 국립생태원",
     },Leai: {
         title: "곳체두드럭 조개",
         src: Leai,
-        explanation:"",
+        explanation:"패각 형태는 난형이다. 각피는 두껍고 황갈색이나 검은 녹색을 띤다. 두드럭조개(L. coreana)와 비교해 각고는 낮고, 각장이 길어 약간 길쭉하며 각폭이 좁아 납작하며, 서식장소에 따라 형태변이가 있다. 태각 주변에는 불규칙하고 굵은 돌기가 있고 패각 뒤쪽으로 가면서 불규칙한 륵을 이루는데, 뒤쪽 종륵이 12개 정도 있고, 종륵 사이의 간격은 넓으며, 끝이 퍼지면서 얇아진다. 성장맥은 가늘다. 패각 안쪽의 교치는 우각에 의주치와 후측치가 각각 1개씩이고 좌각은 각각 2개씩이다. 패각의 내면은 엷은 진주 빛 광택을 낸다. 성패의 크기는 각장 69㎜, 각고 44㎜ 정도다. 암수딴몸으로, 바깥쪽 아가미를 보육낭으로 이용해, 보통 10월에서 다음해 4월까지 글로키디움을 보육하는 동계 산란형이다. 모패에서 방출된 글로키디움은 어류의 아가미나 지느러미에 부착해 기생생활을 거친 후 이탈해 유패로 변태한다. 두드럭조개와 서식생태가 유사하다. ",
+        source:"출처: 한국의 멸종위기종"
     },Hyriopsinae: {
         title: "귀이빨대칭이아과 조개",
         src: Hyriopsinae,
@@ -27,19 +30,22 @@ const RESULT = {
     },Arcaeformis: {
         title: "대칭이 조개",
         src: Arcaeformis,
-        explanation:"",
+        explanation:"석패목 석패과의 조개. 민물에 사는 조개 중에서는 가장 크기가 크다. 큰 강이나 호수 등에 서식하며 모래 섞인 진흙바닥에 몸을 숨기고 산다.",
+        source:"출처: 나무위키",
     },Arcaeformis_flavotincta: {
         title: "작은대칭이 조개",
         src: Arcaeformis_flavotincta,
-        explanation:"",
+        explanation:"패각 형태는 긴 타원형으로 각폭은 매우 넓고 패각은 얇다. 각피는 녹색이 도는 흑갈색을 띠며 껍데기는 연하고 건조되었을 때에는 잘 부스러진다. 패각은 앞쪽보다 뒤쪽의 폭이 넓고, 뒤쪽에 짧은 능각 2줄이 성장맥과 교차해 거친 돌기를 형성한다. 각정은 앞쪽으로 약간 치우치고 약하게 돌출한다. 성장맥은 대칭이(A. arcaeformis)보다 덜 뚜렷하며 거친 편이다. 패각 안쪽에 교치는 없다. 패각 내면은 진주 빛이 뚜렷하다. 성체의 크기는 각장 105㎜, 각고 65㎜ 정도다. 암수딴몸으로 통상 10월에서 이듬해 5월까지 글로키디움을 보육하는 동계 산란형이다. 바깥쪽 아가미를 보육낭으로 이용하며, 모패에서 방출된 글로키디움은 어류에 기생생활을 거친 후 이탈해 유패로 변태한다.  ",
+        source:"출처: 한국의 멸종위기종"
     },Woodina: {
         title: "펄조개",
         src: Woodina,
-        explanation:"",
+        explanation:"펄조개는 동아시아 유니온드 홍합과의 일종으로, 주로 아무르 강과 양쯔 강에서 발견된다. 홍합은 최대 30cm까지 자랄 수 있으며, 나이는 12~14세이다. 하지만, 그들은 3-4cm의 크기에도 첫 해에 번식할 수 있습니다. 이 커다란 민물 홍합은 실트 내성이 높은 일반 서식지 동물입니다. 이것은 모든 유니오니아과 홍합과 마찬가지로 숙주 어류의 필수 기생 단계(글로키디움)를 가지고 있음에도 불구하고 전세계적으로 확립되었습니다. 이 종은 광범위한 숙주 일반종이며, 코인베이징과 토종 모두 시험된 모든 어종에 대한 개발을 완료할 수 있습니다. 우디아나의 존재는 토착 유니오니아 개체군에 심각한 영향을 미칠 수 있습니다.",
+        source:"출처: 위키백과(영어)"
     },Unde: {
-        title: "당신이 원하는게 무엇인가요?",
+        title: "몰?루",
         src: Unde,
-        explanation:"몰?루",
+        explanation:"당신이 원하는게 무엇인가요?",
     },
 };
 

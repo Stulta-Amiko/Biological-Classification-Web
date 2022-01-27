@@ -14,7 +14,7 @@ const Quiz = ({setVal}) =>{
                 setVal("Unioninae");
                 history("/loading");
             }else if(value === "AmbleMinae"){
-                setCurrentNo((currentNo)=>currentNo+2);
+                setCurrentNo((currentNo)=>currentNo+1);
             }else if(value === "Coreana"){
                 setVal("Coreana");
                 history("/loading");

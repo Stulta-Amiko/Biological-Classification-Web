@@ -39,14 +39,14 @@ const Cent = styled.div`
 
 const Home = () =>(
     <Container>
-        <Title>메인페이지 테스트</Title>
-        <SubTitle>부제목란</SubTitle>
+        <Title>민물조개 찾기 테스트</Title>
+        <SubTitle>당신이 오늘본 민물조개는 무슨 조개일까요?</SubTitle>
         <StyledImage src={coverImg} alt="cover"></StyledImage>
         <Text>
-            설명란 테스트
+            당신이 오늘 본 민물조개에 대해서 알아보는 시간을 가지도록 합시다.
         </Text>
         <Cent>
-            <Button to="/quiz" styled={{textDecoration: 'none'}}>시작버튼</Button>
+            <Button to="/quiz" styled={{textDecoration: 'none'}}>시작</Button>
         </Cent>
     </Container>
 );
